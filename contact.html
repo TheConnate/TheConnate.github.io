@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — The Connate</title>
+  <meta name="description" content="Book a 20-minute demo of The Connate's AI workflows, or reach out by phone or email. Serving dental and eye clinics in the Minneapolis / St. Paul area.">
+  <meta name="theme-color" content="#0B2B4F">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">The Connate</a>
+    <nav class="main-nav" aria-label="Main">
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="#book" class="btn btn-accent">Book a demo</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-header">
+    <div class="container">
+      <span class="eyebrow">Get in touch</span>
+      <h1>Book a demo or reach out directly</h1>
+      <p>The fastest path is the 20-minute demo. No prep on your end — we run it live using real scenarios from your practice.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT METHODS -->
+  <section class="section" id="book">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-card">
+          <div class="icon-circle">📅</div>
+          <h3>Book a demo</h3>
+          <p>20-minute live demo, zero pitch, runs on your own patient scenarios.</p>
+          <p><a href="https://calendly.com/theconnate/demo" target="_blank" rel="noopener">Open scheduler →</a></p>
+        </div>
+
+        <div class="contact-card">
+          <div class="icon-circle">✉</div>
+          <h3>Email</h3>
+          <p>For questions, pilot agreements, or referrals.</p>
+          <p><a href="mailto:hello@theconnate.com">hello@theconnate.com</a></p>
+        </div>
+
+        <div class="contact-card">
+          <div class="icon-circle">☎</div>
+          <h3>Phone</h3>
+          <p>Text is faster than voicemail — drop us a note if it's urgent.</p>
+          <p><a href="tel:+16125551234">(612) 555-1234</a></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CALENDLY EMBED PLACEHOLDER -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Pick a time that works for you</h2>
+        <p>20 minutes. Zoom or phone. Mornings and afternoons available Monday through Friday.</p>
+      </div>
+
+      <!-- Calendly inline widget — replace data-url with your real Calendly link -->
+      <div class="calendly-inline-widget"
+           data-url="https://calendly.com/theconnate/demo"
+           style="min-width:320px;height:700px;">
+      </div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+      <noscript>
+        <p style="text-align: center; color: var(--text-muted);">
+          JavaScript is required to show the scheduler. You can email us at
+          <a href="mailto:hello@theconnate.com">hello@theconnate.com</a> instead.
+        </p>
+      </noscript>
+    </div>
+  </section>
+
+  <!-- SERVICE AREA -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Service area</h2>
+        <p>
+          Based in Minneapolis, serving independent dental and eye clinics across
+          the Twin Cities metro including Minneapolis, St. Paul, Edina, Eden Prairie,
+          Minnetonka, Bloomington, Roseville, Maplewood, and Woodbury. For practices
+          outside the metro, we can run the pilot remotely.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PILOT REMINDER CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>The pilot is the easiest way to start</h2>
+      <p>$500 flat fee, 30 days, runs alongside your current tools. No contract, no risk.</p>
+      <div class="hero-ctas">
+        <a href="services.html#pricing" class="btn btn-primary btn-large">See pricing</a>
+        <a href="#book" class="btn btn-secondary btn-large">Book a demo</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <div class="logo" style="color: #fff;">The Connate</div>
+      <p class="tagline">
+        HIPAA-compliant AI workflow automation for independent clinics
+        in Minneapolis and St. Paul.
+      </p>
+    </div>
+    <div>
+      <h4>Product</h4>
+      <ul>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="services.html#pricing">Pricing</a></li>
+        <li><a href="services.html#deployment">Deployment</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <p class="copyright">
+      &copy; 2026 The Connate LLC. Minneapolis, Minnesota.
+    </p>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const menu = document.querySelector('.main-nav ul');
+  if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+      const isOpen = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+
+</body>
+</html>
