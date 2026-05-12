@@ -1,127 +1,166 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!-- SHARED:HEAD-META:START -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About — The Connate</title>
   <meta name="description" content="The Connate is a Minneapolis-based AI workflow automation practice helping independent dental and eye clinics in the Twin Cities automate their admin work.">
-  <meta name="theme-color" content="#0B2B4F">
+  <meta name="theme-color" content="#F6F1E8">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="style.css">
+  <meta property="og:title" content="About — The Connate">
+  <meta property="og:description" content="Minneapolis-based AI workflow automation built for independent Twin Cities dental and eye clinics.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://theconnate.com/about.html">
+  <meta property="og:image" content="https://theconnate.com/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About — The Connate">
+  <meta name="twitter:description" content="Minneapolis-based AI workflow automation built for independent Twin Cities dental and eye clinics.">
+  <meta name="twitter:image" content="https://theconnate.com/og-image.png">
+  <!-- SHARED:HEAD-META:END -->
 </head>
 <body>
 
 <a class="skip-link" href="#main">Skip to content</a>
 
+<!-- SHARED:HEADER:START -->
 <header class="site-header">
   <div class="container">
     <a href="index.html" class="logo">The Connate</a>
     <nav class="main-nav" aria-label="Main">
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
       </button>
-      <ul>
+      <ul id="primary-nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="about.html" class="active" aria-current="page">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="contact.html" class="btn btn-accent">Book a demo</a></li>
+        <li><a href="contact.html" class="btn btn--primary">Book a demo</a></li>
       </ul>
     </nav>
   </div>
 </header>
+<!-- SHARED:HEADER:END -->
 
 <main id="main">
 
   <section class="page-header">
     <div class="container">
-      <span class="eyebrow">About The Connate</span>
-      <h1>Built for independent clinics in the Twin Cities</h1>
-      <p>A Minneapolis-based practice focused on the admin work that's eating your front desk's day.</p>
+      <span class="eyebrow">About</span>
+      <h1 class="display--l">Why we exist.</h1>
+      <p class="lead">A Minneapolis-based practice focused on the admin work that's eating your front desk's day.</p>
     </div>
   </section>
 
+  <!-- FOUNDER BLOCK (portrait is a placeholder — swap with a real headshot before launch) -->
   <section class="section">
-    <div class="container about-content">
-      <h2>Who we are</h2>
+    <div class="container">
+      <div class="founder" data-reveal>
+        <div class="founder__portrait" aria-hidden="true">
+          <!-- Intentionally empty solid-color portrait frame until a real headshot ships. -->
+        </div>
+        <div class="founder__bio">
+          <span class="eyebrow">Founder</span>
+          <h2 class="display--m">Building the tool I wanted clinics to have.</h2>
+          <p>
+            The Connate is a Minnesota LLC run out of the Twin Cities. I'm a software engineer with years of experience building production software for healthcare and enterprise clients — and I started The Connate because I kept watching small clinics get sold rigid, template-based "patient engagement" tools that didn't actually reduce their staff's workload.
+          </p>
+          <p>
+            The best AI tools today can draft real, context-aware messages in seconds — but nobody was packaging them for independent dental and eye practices. The big platforms are either too expensive, too generic, or too tied to cloud vendors the clinic doesn't trust with patient data. The Connate fills that gap: AI workflows shipped for clinics your size, deployed the way you want, and priced so a single recovered no-show covers the monthly fee.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY WE EXIST — editorial prose -->
+  <section class="section section--alt">
+    <div class="container prose">
+      <span class="eyebrow">Why we exist</span>
+      <h2 class="display--l">Independent clinics deserve software that fits.</h2>
       <p>
-        The Connate is a Minnesota LLC run out of the Twin Cities. I'm a software
-        engineer with years of experience building production software for healthcare
-        and enterprise clients — and I started The Connate because I kept watching
-        small clinics get sold rigid, template-based "patient engagement" tools that
-        didn't actually reduce their staff's workload.
+        Independent dental and eye practices spend their days catching what falls through the gaps in their PMS and their phone system. Reminder calls that don't go out. Intake forms that get retyped. Insurance questions answered the same way twenty times a day. None of that work makes the practice better; all of it costs hours.
       </p>
-
       <p>
-        The best AI tools today can draft real, context-aware messages in seconds —
-        but nobody was packaging them for independent dental and eye practices. The
-        big platforms are either too expensive, too generic, or too tied to cloud
-        vendors the clinic doesn't trust with patient data. The Connate fills that
-        gap: AI workflows shipped for clinics your size, deployed the way you want,
-        and priced so a single recovered no-show covers the monthly fee.
+        The Connate isn't a "platform." It's a small set of AI workflows shipped one at a time, customized to your practice during a 30-day pilot. Every draft a human reviews. Every output stays inside your environment. The pricing is structured so a single recovered no-show pays the monthly fee.
       </p>
+    </div>
+  </section>
 
-      <h2>What we believe</h2>
+  <!-- PULL QUOTE -->
+  <section class="pull-quote-band">
+    <div class="container" data-reveal>
+      <blockquote class="pull-quote">
+        <q>We don't pitch headcount reduction. Your staff stops retyping forms and starts doing the work that grows the practice.</q>
+        <cite>— A working principle, not a slogan</cite>
+      </blockquote>
+    </div>
+  </section>
 
-      <div class="values-grid">
+  <!-- WHAT WE BELIEVE -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Principles</span>
+        <h2>What we believe.</h2>
+      </div>
+      <div class="values-grid" data-reveal>
         <div class="value-card">
-          <h4>The AI never sends</h4>
+          <h3>The AI never sends.</h3>
           <p>Every message, form extraction, and draft goes through a human review before it reaches a patient. That's how we stay HIPAA-safe and liability-safe.</p>
         </div>
         <div class="value-card">
-          <h4>You pick how it runs</h4>
+          <h3>You pick how it runs.</h3>
           <p>Some practices want a private Azure tenant with a signed Microsoft BAA. Others want a physical machine in their office, fully air-gapped. Both are HIPAA-compliant. Neither is "the right answer" — you pick what fits.</p>
         </div>
         <div class="value-card">
-          <h4>Your team stays</h4>
+          <h3>Your team stays.</h3>
           <p>We don't pitch headcount reduction. Your staff stops retyping intake forms and starts doing the work that grows the practice — recall calls, patient relationships, treatment follow-ups.</p>
         </div>
         <div class="value-card">
-          <h4>The pilot is the close</h4>
+          <h3>The pilot is the close.</h3>
           <p>We don't sell annual contracts on promises. Every engagement starts with a 30-day pilot at $500. If it doesn't save you time or recover real revenue, you walk away with no obligation.</p>
         </div>
       </div>
+    </div>
+  </section>
 
-      <h2>Why the Twin Cities</h2>
+  <!-- WHY THE TWIN CITIES -->
+  <section class="section section--alt">
+    <div class="container prose">
+      <span class="eyebrow">Why the Twin Cities</span>
+      <h2 class="display--l">Built for clinics that still know their patients' names.</h2>
       <p>
-        Minneapolis and St. Paul have an unusually strong community of independent
-        dental and eye practices that have resisted the pull of DSOs and hospital
-        system acquisition. Those are exactly the practices that benefit most from
-        the right technology — where the owner still makes the decision, where the
-        front desk still knows every patient's name, and where a single staff hire
-        is a real business decision. The Connate is built for those practices
-        specifically.
-      </p>
-
-      <h2>How to reach us</h2>
-      <p>
-        The fastest way is the <a href="contact.html">contact page</a> — book a
-        20-minute demo on the calendar and we'll run a live walkthrough using
-        your practice's real workflows. No slides, no pitch, just the tool
-        working on the kind of scenarios your front desk handles every day.
+        Minneapolis and St. Paul have an unusually strong community of independent dental and eye practices that have resisted the pull of DSOs and hospital system acquisition. Those are exactly the practices that benefit most from the right technology — where the owner still makes the decision, where the front desk still knows every patient's name, and where a single staff hire is a real business decision. The Connate is built for those practices specifically.
       </p>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="cta-section">
+  <!-- CTA CLOSER -->
+  <section class="cta-closer">
     <div class="container">
-      <h2>See it live in 20 minutes</h2>
+      <h2>See it live in 20 minutes.</h2>
       <p>Book a time that works for you. Zero prep on your end.</p>
       <div class="hero-ctas">
-        <a href="contact.html" class="btn btn-primary btn-large">Book a demo</a>
+        <a href="contact.html" class="btn btn--primary btn--lg">Book a demo</a>
       </div>
     </div>
   </section>
 
 </main>
 
+<!-- SHARED:FOOTER:START -->
 <footer class="site-footer">
   <div class="container">
     <div>
-      <div class="logo" style="color: #fff;">The Connate</div>
+      <a href="index.html" class="logo">The Connate</a>
       <p class="tagline">
         HIPAA-compliant AI workflow automation for independent clinics
         in Minneapolis and St. Paul.
@@ -142,22 +181,24 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
+    <div>
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="privacy.html">Privacy</a></li>
+      </ul>
+    </div>
     <p class="copyright">
       &copy; 2026 The Connate LLC. Minneapolis, Minnesota.
     </p>
   </div>
 </footer>
+<!-- SHARED:FOOTER:END -->
 
-<script>
-  const toggle = document.querySelector('.nav-toggle');
-  const menu = document.querySelector('.main-nav ul');
-  if (toggle && menu) {
-    toggle.addEventListener('click', () => {
-      const isOpen = menu.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', isOpen);
-    });
-  }
-</script>
+<aside class="sticky-cta">
+  <a href="contact.html" class="btn btn--primary">Book a 20-minute demo</a>
+</aside>
+
+<script src="script.js" defer></script>
 
 </body>
 </html>
