@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#F6F1E8"/>
+
+  <!-- top hairline -->
+  <line x1="80" y1="100" x2="1120" y2="100" stroke="rgba(31,41,55,0.10)" stroke-width="1"/>
+
+  <!-- eyebrow -->
+  <text x="80" y="80" font-family="Inter, system-ui, sans-serif"
+        font-size="22" font-weight="600" fill="#5A7A66"
+        letter-spacing="3">FOR DENTAL &amp; EYE CLINICS · TWIN CITIES</text>
+
+  <!-- monogram block -->
+  <rect x="80" y="180" width="64" height="64" rx="12" fill="#C0532A"/>
+
+  <!-- wordmark -->
+  <text x="80" y="380" font-family="Fraunces, Georgia, serif"
+        font-size="110" font-weight="500" fill="#0F2A44"
+        letter-spacing="-3">The Connate</text>
+
+  <!-- tagline -->
+  <text x="80" y="450" font-family="Inter, system-ui, sans-serif"
+        font-size="34" font-weight="400" fill="#3A4A5C">
+    HIPAA-compliant AI workflows for independent clinics.
+  </text>
+
+  <!-- bottom anchor -->
+  <text x="80" y="570" font-family="Inter, system-ui, sans-serif"
+        font-size="22" font-weight="500" fill="#6B7787">theconnate.com</text>
+</svg>
