@@ -1,145 +1,176 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!-- SHARED:HEAD-META:START -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Services — The Connate</title>
-  <meta name="description" content="AI workflows for clinics: appointment reminders, intake extraction, recall reactivation, insurance explainers, post-visit follow-up. Two deployment options and transparent pricing.">
-  <meta name="theme-color" content="#0B2B4F">
+  <meta name="description" content="AI workflows for dental and eye clinics: appointment reminders, intake extraction, recall reactivation, insurance explainers, post-visit follow-up. Two deployment options. Transparent pricing.">
+  <meta name="theme-color" content="#F6F1E8">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="style.css">
+  <meta property="og:title" content="Services — The Connate">
+  <meta property="og:description" content="AI workflows for Twin Cities dental and eye clinics. Two deployment options. Transparent pricing.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://theconnate.com/services.html">
+  <meta property="og:image" content="https://theconnate.com/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Services — The Connate">
+  <meta name="twitter:description" content="AI workflows for Twin Cities dental and eye clinics. Two deployment options. Transparent pricing.">
+  <meta name="twitter:image" content="https://theconnate.com/og-image.png">
+  <!-- SHARED:HEAD-META:END -->
 </head>
 <body>
 
 <a class="skip-link" href="#main">Skip to content</a>
 
+<!-- SHARED:HEADER:START -->
 <header class="site-header">
   <div class="container">
     <a href="index.html" class="logo">The Connate</a>
     <nav class="main-nav" aria-label="Main">
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
       </button>
-      <ul>
+      <ul id="primary-nav">
         <li><a href="index.html">Home</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="services.html" class="active" aria-current="page">Services</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="contact.html" class="btn btn-accent">Book a demo</a></li>
+        <li><a href="contact.html" class="btn btn--primary">Book a demo</a></li>
       </ul>
     </nav>
   </div>
 </header>
+<!-- SHARED:HEADER:END -->
 
 <main id="main">
 
   <section class="page-header">
     <div class="container">
       <span class="eyebrow">What we do</span>
-      <h1>AI workflows that draft — your staff reviews and sends</h1>
-      <p>
-        The AI never sends anything on its own. Every message, form extraction,
-        and draft goes through a human review step before it reaches a patient.
-        That's how we stay HIPAA-compliant and liability-safe.
+      <h1 class="display--l">AI workflows that draft — your staff reviews and sends.</h1>
+      <p class="lead">
+        The AI never sends anything on its own. Every message, every form extraction, and every draft goes through a human review step before it reaches a patient. That's how we stay HIPAA-compliant and liability-safe.
       </p>
     </div>
   </section>
 
-  <!-- WORKFLOWS GRID -->
+  <!-- WORKFLOWS — grouped editorial layout -->
   <section class="section">
     <div class="container">
       <div class="section-header">
-        <h2>Workflows we ship out of the box</h2>
-        <p>Every workflow is customized for your specific practice during the pilot.</p>
+        <span class="eyebrow">Workflows</span>
+        <h2>Five categories, customized to your practice.</h2>
+        <p class="lead">Every workflow is shaped during the pilot — not pulled from a template library.</p>
       </div>
-      <div class="grid grid-3">
 
-        <div class="card">
-          <div class="icon">R</div>
+      <div class="deploy-grid" data-reveal>
+        <article class="card">
+          <span class="tag">Scheduling</span>
           <h3>Appointment reminders</h3>
-          <p>Multi-step reminder sequences at 72 hours, 24 hours, and 2 hours before the visit, with patient-specific prep instructions automatically included.</p>
-        </div>
-
-        <div class="card">
-          <div class="icon">I</div>
+          <p>Multi-step reminder sequences at 72 hours, 24 hours, and 2 hours before the visit. Patient-specific prep instructions included automatically.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Intake</span>
           <h3>Patient intake extraction</h3>
-          <p>Scan or photograph an intake form, and structured data lands in your PMS in seconds. Staff reviews and confirms before it saves.</p>
-        </div>
-
-        <div class="card">
-          <div class="icon">✓</div>
+          <p>Scan or photograph an intake form. Structured data lands in your PMS in seconds. Staff reviews and confirms before it saves.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Recall</span>
+          <h3>Recall reactivation</h3>
+          <p>Personalized outreach for patients overdue for their 6-month hygiene or annual eye exam. Friendly, specific, never templated.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Insurance</span>
           <h3>Insurance benefit explainer</h3>
           <p>Plain-English summaries of what a patient's plan covers — coverage levels, deductibles, waiting periods — drafted in seconds.</p>
-        </div>
-
-        <div class="card">
-          <div class="icon">↻</div>
-          <h3>Recall reactivation</h3>
-          <p>Personalized outreach for patients overdue for their 6-month hygiene or annual eye exam. Friendly, specific, and never templated.</p>
-        </div>
-
-        <div class="card">
-          <div class="icon">★</div>
+        </article>
+        <article class="card">
+          <span class="tag">Follow-ups</span>
           <h3>Post-visit follow-up &amp; reviews</h3>
           <p>Personalized aftercare messages, optical-capture reminders for eye clinics, and review request texts after successful visits.</p>
-        </div>
-
-        <div class="card">
-          <div class="icon">!</div>
+        </article>
+        <article class="card">
+          <span class="tag">Triage</span>
           <h3>Emergency triage</h3>
           <p>Urgent patient calls classified by priority with a drafted response for your staff to review before it goes out.</p>
-        </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
+  <!-- STATS ROW (placeholder numbers) -->
+  <section class="section section--alt">
+    <div class="container" data-reveal>
+      <div class="stats-row">
+        <div class="stat">
+          <span class="stat__number">5 min</span>
+          <span class="stat__label">saved per intake form</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">40+</span>
+          <span class="stat__label">calls / week handled by reminders</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">0</span>
+          <span class="stat__label">messages sent without staff review</span>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- DEPLOYMENT COMPARISON -->
-  <section class="section section-alt" id="deployment">
+  <section class="section" id="deployment">
     <div class="container">
       <div class="section-header">
-        <h2>Cloud or on-premise — same workflows either way</h2>
-        <p>Both are HIPAA-compliant. Both run the exact same codebase. You pick based on your privacy preference, not on cost.</p>
+        <span class="eyebrow">Deployment</span>
+        <h2>Cloud or on-premise. Same workflows either way.</h2>
+        <p class="lead">Both are HIPAA-compliant. Both run the exact same codebase. Pick based on your privacy preference, not on cost.</p>
       </div>
-      <div style="overflow-x: auto;">
-        <table class="comparison-table">
+      <div class="compare-wrap" data-reveal>
+        <table class="compare">
+          <caption class="compare__caption">Cloud vs. on-premise deployment comparison</caption>
           <thead>
             <tr>
-              <th>&nbsp;</th>
-              <th>Cloud (Azure)</th>
-              <th>Local (On-Premise)</th>
+              <th scope="col">Feature</th>
+              <th scope="col">Cloud (Azure)</th>
+              <th scope="col">Local (On-Premise)</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Where your data lives</td>
+              <th scope="row">Where your data lives</th>
               <td>Your private Azure tenant, US region</td>
               <td>Physical Mac Mini in your office</td>
             </tr>
             <tr>
-              <td>HIPAA compliance</td>
+              <th scope="row">HIPAA compliance</th>
               <td>Signed Microsoft BAA</td>
               <td>Air-gapped — no internet path for patient data</td>
             </tr>
             <tr>
-              <td>Hardware cost</td>
+              <th scope="row">Hardware cost</th>
               <td>$0 upfront</td>
               <td>Included in setup fee</td>
             </tr>
             <tr>
-              <td>Deploy time</td>
+              <th scope="row">Deploy time</th>
               <td>Hours</td>
               <td>1–2 days (shipping + install)</td>
             </tr>
             <tr>
-              <td>Works offline</td>
+              <th scope="row">Works offline</th>
               <td>No — needs internet</td>
               <td>Yes — fully air-gapped</td>
             </tr>
             <tr>
-              <td>Best for</td>
+              <th scope="row">Best for</th>
               <td>Cloud-comfortable practices, multi-location groups</td>
               <td>Privacy-first, zero-trust, or internet-challenged locations</td>
             </tr>
@@ -150,15 +181,16 @@
   </section>
 
   <!-- PRICING -->
-  <section class="section" id="pricing">
+  <section class="section section--alt" id="pricing">
     <div class="container">
       <div class="section-header">
-        <h2>Transparent pricing</h2>
-        <p>Start with a 30-day pilot. Expand only if the numbers work for you.</p>
+        <span class="eyebrow">Pricing</span>
+        <h2>Transparent. No annual lock-in.</h2>
+        <p class="lead">Start with a 30-day pilot. Expand only if the numbers work for you.</p>
       </div>
-      <div class="pricing-grid">
+      <div class="pricing-grid" data-reveal>
 
-        <div class="price-card">
+        <div class="card price-card">
           <h3>Pilot</h3>
           <div class="price">$500</div>
           <div class="price-sub">One-time · 30 days</div>
@@ -171,10 +203,10 @@
           </ul>
         </div>
 
-        <div class="price-card featured">
+        <div class="card price-card featured">
           <h3>Starter</h3>
-          <div class="price">$1,500<span style="font-size: 1rem; font-weight: 400;"> setup</span></div>
-          <div class="price-sub">Then $300/month</div>
+          <div class="price">$1,500</div>
+          <div class="price-sub">Setup, then $300 / month</div>
           <ul>
             <li>2 workflows</li>
             <li>Hardware or Azure tenant included</li>
@@ -184,10 +216,10 @@
           </ul>
         </div>
 
-        <div class="price-card">
+        <div class="card price-card">
           <h3>Professional</h3>
-          <div class="price">$3,000<span style="font-size: 1rem; font-weight: 400;"> setup</span></div>
-          <div class="price-sub">Then $500/month</div>
+          <div class="price">$3,000</div>
+          <div class="price-sub">Setup, then $500 / month</div>
           <ul>
             <li>4 or more workflows</li>
             <li>Hardware or Azure tenant included</li>
@@ -197,7 +229,7 @@
           </ul>
         </div>
 
-        <div class="price-card">
+        <div class="card price-card">
           <h3>Enterprise</h3>
           <div class="price">Custom</div>
           <div class="price-sub">Multi-location &amp; integrations</div>
@@ -206,7 +238,7 @@
             <li>Multi-location deployment</li>
             <li>Custom PMS/EHR integration</li>
             <li>Dedicated account management</li>
-            <li>Starting at $5,000 setup + $800/mo</li>
+            <li>Starting at $5,000 setup + $800 / mo</li>
           </ul>
         </div>
 
@@ -214,23 +246,60 @@
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="cta-section">
+  <!-- FAQ -->
+  <section class="section">
     <div class="container">
-      <h2>The 30-day pilot is the best way to see if this fits</h2>
+      <div class="section-header">
+        <span class="eyebrow">Questions</span>
+        <h2>What clinics ask before signing.</h2>
+      </div>
+      <div class="faq" data-reveal>
+        <details class="disclosure">
+          <summary>Is my data really private?</summary>
+          <p>Yes. With the Azure deployment, your data stays inside your own Microsoft tenant under a signed Business Associate Agreement from Microsoft — we never see it. With the on-premise deployment, your data stays inside the physical machine in your office and never touches the internet for patient information.</p>
+        </details>
+        <details class="disclosure">
+          <summary>What if I want to cancel?</summary>
+          <p>The pilot is $500 flat for 30 days with no contract. After the pilot, monthly plans are month-to-month. Cancel any time with 30 days' notice. We don't believe in annual lock-in contracts.</p>
+        </details>
+        <details class="disclosure">
+          <summary>Do you integrate with Dentrix, Compulink, or our PMS?</summary>
+          <p>Intake extraction lands structured data in the formats your PMS expects. We support Dentrix, Open Dental, Eaglesoft, Compulink, and Crystal PM out of the box. Custom integrations for other systems are part of the Professional and Enterprise tiers.</p>
+        </details>
+        <details class="disclosure">
+          <summary>Who owns the AI outputs?</summary>
+          <p>You do. Every draft message, every extracted form, every summary — those belong to your practice. We don't reuse your data to train models. Patient data stays in your environment by design.</p>
+        </details>
+        <details class="disclosure">
+          <summary>What about audit trails?</summary>
+          <p>Every AI-drafted output is logged with a timestamp, the staff member who reviewed it, what was edited, and what was sent. Audit trails are exportable as CSV or PDF on demand.</p>
+        </details>
+        <details class="disclosure">
+          <summary>What's the actual difference between Cloud and On-Premise for me?</summary>
+          <p>Cloud is faster to deploy (hours, not days), scales instantly, and requires no hardware. On-Premise is fully air-gapped, works during internet outages, and removes the need for a BAA because data never leaves your office. Cost over three years is comparable. Pick based on your privacy preference.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA CLOSER -->
+  <section class="cta-closer">
+    <div class="container">
+      <h2>The 30-day pilot is the best way to see if this fits.</h2>
       <p>$500, no contract, runs alongside whatever you use today. If we can't save you time or recover real revenue in 30 days, you don't continue.</p>
       <div class="hero-ctas">
-        <a href="contact.html" class="btn btn-primary btn-large">Book a demo</a>
+        <a href="contact.html" class="btn btn--primary btn--lg">Book a demo</a>
       </div>
     </div>
   </section>
 
 </main>
 
+<!-- SHARED:FOOTER:START -->
 <footer class="site-footer">
   <div class="container">
     <div>
-      <div class="logo" style="color: #fff;">The Connate</div>
+      <a href="index.html" class="logo">The Connate</a>
       <p class="tagline">
         HIPAA-compliant AI workflow automation for independent clinics
         in Minneapolis and St. Paul.
@@ -251,22 +320,24 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
+    <div>
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="privacy.html">Privacy</a></li>
+      </ul>
+    </div>
     <p class="copyright">
       &copy; 2026 The Connate LLC. Minneapolis, Minnesota.
     </p>
   </div>
 </footer>
+<!-- SHARED:FOOTER:END -->
 
-<script>
-  const toggle = document.querySelector('.nav-toggle');
-  const menu = document.querySelector('.main-nav ul');
-  if (toggle && menu) {
-    toggle.addEventListener('click', () => {
-      const isOpen = menu.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', isOpen);
-    });
-  }
-</script>
+<aside class="sticky-cta">
+  <a href="contact.html" class="btn btn--primary">Book a 20-minute demo</a>
+</aside>
+
+<script src="script.js" defer></script>
 
 </body>
 </html>
