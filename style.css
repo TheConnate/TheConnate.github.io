@@ -48,11 +48,11 @@ a:hover {
   /* Color */
   --ink:        #0F2A44;
   --ink-soft:   #3A4A5C;
-  --ink-muted:  #6B7787;
+  --ink-muted:  #5E6A7A; /* darkened from #6B7787 to pass WCAG-AA (4.89:1 on cream) */
   --cream:      #F6F1E8;
   --cream-deep: #EDE5D4;
   --paper:      #FBF8F2;
-  --sage:       #5A7A66;
+  --sage:       #4A6855; /* darkened from #5A7A66 to pass WCAG-AA on cream (5.49:1) and sage-soft (4.61:1) */
   --sage-soft:  #D8E1D8;
   --clay:       #C0532A;
   --clay-deep:  #9E4220;
