@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://theconnate.com/sitemap.xml
